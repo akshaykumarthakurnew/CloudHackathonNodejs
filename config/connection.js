@@ -32,7 +32,7 @@ async function getConnectionInfo() {
   const DATABASE_NAME = process.env.DATABASE_NAME || "azure-todo-app";
 
   return {
-    DATABASE_URL: process.env.DATABASE_URL,
+    DATABASE_URL: process.env.AZURE_COSMOS_CONNECTIONSTRING,
     DATABASE_NAME: process.env.DATABASE_NAME
   }
 }

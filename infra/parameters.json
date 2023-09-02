@@ -1,0 +1,133 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "c3a8bc22-8bfc-494f-88e3-1cf40c6144fd"
+        },
+        "name": {
+            "value": "akkinodejstest"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingPlanName": {
+            "value": "ASP-testeastak-b593"
+        },
+        "serverFarmResourceGroup": {
+            "value": "testeastak"
+        },
+        "databaseName": {
+            "value": "akkinodejstest-database"
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "B1"
+        },
+        "workerSize": {
+            "value": ""
+        },
+        "workerSizeId": {
+            "value": ""
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "linuxFxVersion": {
+            "value": "NODE|16-lts"
+        },
+        "accountName": {
+            "value": "akkinodejstest-server"
+        },
+        "databaseKind": {
+            "value": "MongoDB"
+        },
+        "defaultExperience": {
+            "value": "Azure Cosmos DB for MongoDB API"
+        },
+        "isZoneRedundant": {
+            "value": "false"
+        },
+        "databaseAccountType": {
+            "value": "Standard"
+        },
+        "backupPolicyType": {
+            "value": "Periodic"
+        },
+        "backupIntervalInMinutes": {
+            "value": 240
+        },
+        "backupRetentionIntervalInHours": {
+            "value": 8
+        },
+        "backupStorageRedundancy": {
+            "value": "Local"
+        },
+        "isVirtualNetworkFilterEnabled": {
+            "value": "false"
+        },
+        "enableFreeTier": {
+            "value": "false"
+        },
+        "capabilities": {
+            "value": [
+                {
+                    "name": "EnableMongo"
+                },
+                {
+                    "name": "DisableRateLimitingResponses"
+                },
+                {
+                    "name": "EnableServerless"
+                }
+            ]
+        },
+        "vnetName": {
+            "value": "akkinodejstestVnet"
+        },
+        "privateEndpointSubnet": {
+            "value": "akkinodejstestSubnet"
+        },
+        "subnetForApp": {
+            "value": "akkinodejstestAppSubnet"
+        },
+        "subnetForDb": {
+            "value": ""
+        },
+        "privateEndpointNameForApp": {
+            "value": "akkinodejstestAppEndpoint"
+        },
+        "privateEndpointNameForDb": {
+            "value": "akkinodejstestDbEndpoint"
+        },
+        "privateEndpointNameForCache": {
+            "value": "akkinodejstest-cache-privateEndpoint"
+        },
+        "privateDnsZoneNameForApp": {
+            "value": "privatelink.azurewebsites.net"
+        },
+        "privateDnsZoneNameForDb": {
+            "value": "privatelink.mongo.cosmos.azure.com"
+        },
+        "privateDnsZoneNameForCache": {
+            "value": "privatelink.redis.cache.windows.net"
+        },
+        "isVnetEnabled": {
+            "value": true
+        },
+        "isPrivateEndpointForAppEnabled": {
+            "value": false
+        },
+        "isCacheEnabled": {
+            "value": false
+        },
+        "cacheName": {
+            "value": "akkinodejstest-cache"
+        }
+    }
+}
